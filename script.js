@@ -5,7 +5,7 @@ const player1El = document.querySelector('.player--1');
 const score0El = document.querySelector('#score--0');
 const score1El = document.getElementById('score--1');
 const current0El = document.getElementById('current--0');
-const current1El = document.querySelector('current--1');
+const current1El = document.querySelector('#current--1');
 
 const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
@@ -80,4 +80,26 @@ btnHold.addEventListener('click', function () {
       switchPlayer();
     }
   }
+});
+
+//Resetting the Game
+btnNew.addEventListener('click', function () {
+  //1. Set all scores to 0
+  //1.1 Make the current score as 0 for both the players
+  currentScore = 0;
+  current0El.textContent = 0;
+  current1El.textContent = 0;
+  //1.2 Make the total score as 0 for both the players
+  scores[0] = 0;
+  scores[1] = 0;
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+  //1.3 Set player 0 as starting player
+  activePlayer = 0;
+  player0El.classList.add('player--active');
+  //1.4 set playing to true
+  playing = true;
+  //1.5 remove the winner class from the player who won the game
+  player0El.classList.remove('player--winner');
+  player1El.classList.remove('player--winner');
 });
