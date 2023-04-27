@@ -10,7 +10,7 @@ Play this game from here - https://pig-game-pp.netlify.app/
 
 ![image](https://user-images.githubusercontent.com/54476598/234936698-7c8f089d-1564-4f28-868d-77edaf2d8621.png)
 
-3. If Player 1 holds this value, then that value will stored in total and current will again reset to 0 for player 1 and It will be tuen of player 2 now.
+3. If Player 1 holds this value, then that value will stored in total and current will again reset to 0 for player 1 and It will be turn of player 2 now.
 
 ![image](https://user-images.githubusercontent.com/54476598/234937010-602ce42f-428a-4204-8d69-83df8f9946ba.png)
 
